@@ -1,0 +1,23 @@
+.App {
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+    background-color: #faf9f6;
+}
+
+.HomePage {
+    padding-top: 101px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.AlertMessages {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+i {
+    padding: 4px;
+}

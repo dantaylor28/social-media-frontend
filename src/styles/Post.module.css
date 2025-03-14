@@ -1,0 +1,43 @@
+.Post {
+    margin-bottom: 20px;
+}
+
+.PinSpan {
+    color: #464646;
+}
+
+.PinSpan:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.CommentLink {
+    text-decoration: none !important;
+    color: #464646;
+}
+
+.CommentLink:hover {
+    color: black;
+}
+
+.Title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.Caption {
+    text-align: center;
+}
+
+.TimeStamp {
+    font-size: smaller;
+}
+
+.Owner {
+    color: black;
+}
+
+.Owner:hover {
+    color: black;
+}

@@ -1,0 +1,140 @@
+.Button {
+    display: flex;
+    justify-content: center;
+    width: 45%;
+    margin: auto;
+    padding: 10px 0px;
+    color: white;
+    background-color: #3b5998;
+    border-color: #3b5998;
+}
+
+.Button:hover {
+    cursor: pointer;
+    color: #3b5998;
+    background-color: #dfe3ee;
+    border-color: #3b5998;
+}
+
+.PostButton {
+    min-width: 20%;
+    margin: 10px;
+    padding: 5px 10px;
+    color: #dfe3ee;
+    background-color: #3b5998;
+    border-color: #dfe3ee;
+}
+
+.PostButton:hover {
+    cursor: pointer;
+    color: #3b5998;
+    background-color: #dfe3ee;
+    border-color: #3b5998;
+}
+
+.FollowButton {
+    margin: 0;
+    padding: 5px 5px;
+    color: white;
+    background-color: #3b5998;
+    border-color: #dfe3ee;
+    border-radius: 10%;
+}
+
+.FollowButton:hover {
+    margin: 0;
+    padding: 5px 5px;
+    color: #3b5998;
+    background-color: #dfe3ee;
+    border-color: #3b5998;
+}
+
+.UnfollowButton {
+    margin: 0;
+    padding: 5px 5px;
+    color: #3b5998;
+    background-color: #dfe3ee;
+    border-color: #3b5998;
+    border-radius: 10%;
+}
+
+.UnfollowButton:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #3b5998;
+    border-color: #dfe3ee;
+}
+
+.BtnDiv {
+    text-align: center;
+}
+
+.Pin {
+    font-size: 25px;
+    margin: 0;
+    padding: 5px 5px;
+    color: #ededed;
+    background-color: #c6c6c6;
+    border-color: #ededed;
+    border-radius: 5%;
+    width: 100px;
+}
+
+.Unpin {
+    font-size: 25px;
+    margin: 0;
+    padding: 5px 5px;
+    color: white;
+    background-color: #ee4b2b;
+    border-color: #ee4b2b;
+    border-radius: 5%;
+    width: 100px;
+}
+
+.Pin:hover {
+    font-size: 25px;
+    margin: 0;
+    padding: 5px 5px;
+    color: #ededed;
+    background-color: #bababa;
+    border-color: #ededed;
+}
+
+.Unpin:hover {
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+    background-color: #b82f4c;
+    border-color: #dfe3ee;
+}
+
+.EditDeleteIcon {
+    color: #464646;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.EditDeleteIcon:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.LikeBtn {
+    color: #ee4b2b;
+    padding: 10px;
+    font-size: 20px;
+    background-color: white;
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .LikeBtn:hover {
+    color: #b82f4c;
+    padding: 10px;
+    font-size: 20px;
+    background-color: white;
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
