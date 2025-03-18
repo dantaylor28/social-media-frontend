@@ -1,6 +1,7 @@
 import { rest } from "msw";
 
-const baseURL = "https://social-media-drf-api.herokuapp.com/";
+// const baseURL = "https://social-media-drf-api.herokuapp.com/";
+const baseURL = "https://social-media-api-25-e478cbb9dc3f.herokuapp.com/";
 
 export const handlers = [
   rest.get(`${baseURL}dj-rest-auth/user/`, (req, res, ctx) => {
