@@ -37,17 +37,46 @@ const SignInForm = () => {
     });
   };
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
+  // const handleSubmit = async (event) => {
+  //   event.preventDefault();
+  //   try {
+  //     const { data } = await axios.post("/dj-rest-auth/login/", signInData);
+  //     setCurrentUser(data.user);
+  //     setTokenTimestamp(data);
+  //     history.goBack();
+  //   } catch (error) {
+  //     console.error("Login Error:", error.response?.data || error.message);
+  //     setErrors(error.response?.data);
+  //   }
+  // };
+
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+  
     try {
-      const { data } = await axios.post("/dj-rest-auth/login/", signInData);
-      setCurrentUser(data.user);
-      setTokenTimestamp(data);
-      history.goBack();
+      const response = await axios.post('https://social-media-api-25-e478cbb9dc3f.herokuapp.com/dj-rest-auth/login/', {
+        username: username,
+        password: password,
+      });
+      
+      const token = response.data.key;
+      console.log('Token received:', token);
+  
+      // Store the token in localStorage
+      localStorage.setItem('authToken', token);
+  
+      // Set the Authorization header globally for subsequent requests
+      axios.defaults.headers.Authorization = `Bearer ${token}`;
+  
+      // Redirect user to the home page (or any other route you want)
+      history.goBack();  // Use the desired route after login
+  
     } catch (error) {
-      setErrors(error.response?.data);
+      console.error('Login Error:', error.response.data);
     }
   };
+  
 
   return (
     <Row className={styles.Row}>
