@@ -50,6 +50,22 @@ export const setTokenTimestamp = (data) => {
   localStorage.setItem("refreshTokenTimestamp", refreshTokenTimestamp);
 };
 
+// export const setTokenTimestamp = (data) => {
+//   try {
+//     if (!data?.refresh_token) {
+//       console.warn("No refresh_token found in response data.");
+//       return;
+//     }
+
+//     const refreshTokenTimestamp = jwtDecode(data.refresh_token)?.exp;
+//     if (refreshTokenTimestamp) {
+//       localStorage.setItem("refreshTokenTimestamp", refreshTokenTimestamp);
+//     }
+//   } catch (error) {
+//     console.error("Error decoding refresh token:", error);
+//   }
+// };
+
 export const shouldRefreshToken = () => {
   return !!localStorage.getItem("refreshTokenTimestamp");
 };
